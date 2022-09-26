@@ -12,7 +12,7 @@ class UserService extends Service {
     findByEmail (email) {
         return this.User.findOne({
             email
-        })
+        }).select('+password')
     }
     async createUser (data) {
         data.password = this.ctx.helper.md5(data.password)

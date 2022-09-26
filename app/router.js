@@ -9,5 +9,5 @@ module.exports = app => {
   router.prefix('/api/v1')
 
   router.post('/user', controller.user.create)
-  router.post('/users/login', controller.user.login)
+  router.post('/user/login', controller.user.login)
 };
