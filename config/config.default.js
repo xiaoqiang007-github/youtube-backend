@@ -54,6 +54,10 @@ module.exports = appInfo => {
     expiresIn: 606024
   }
 
+  config.cors = {
+    origin: '*' // 暂定所有
+  }
+
   return {
     ...config,
     ...userConfig,
